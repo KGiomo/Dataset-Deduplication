@@ -9,6 +9,7 @@ Hashing (LSH) to optimize LLM training datasets. Built in C++, the system compre
 O(N^2) to sub-quadratic complexity while operating with an acceptable memory usage. Applying this pipeline to raw text reveals that near-duplicate filtering flags significantly more
 redundant entries than rigid exact matching.
 Benchmarking a simple Python GPT-2 model on this pruned corpus cut training duration without degrading average loss, demonstrating how LSH speeds up execution.
+The PDF contains the theoretical analysis, the results obtained from the experimental results on the [VEP2_TCP_SimpleText dataset](https://github.com/uwgraphics/VEP2_TCP_SimpleText) and their analysis.
 
 ## Dataset Preparation
 
@@ -39,3 +40,5 @@ Run the executable by streaming the concatenated dataset via standard input. The
 ```
 
 ---
+
+EXECUTION PIPELINE -> main.cpp -> Dataset_filtering.py -> Benchmark_train.py
