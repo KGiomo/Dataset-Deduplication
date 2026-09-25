@@ -41,4 +41,6 @@ Run the executable by streaming the concatenated dataset via standard input. The
 
 ---
 
+```bash
 EXECUTION PIPELINE -> main.cpp -> Dataset_filtering.py -> Benchmark_train.py
+```
