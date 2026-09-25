@@ -6,9 +6,7 @@ Project for the course of Algorithms for Massive Data.
 
 This project presents a dataset deduplication pipeline using MinHash and Locality-Sensitive
 Hashing (LSH) to optimize LLM training datasets. Built in C++, the system compresses documents into fixed-length signature vectors and prunes the candidate search space from quadratic
-O(N
-2
-) to sub-quadratic complexity while operating with an acceptable memory usage. Applying this pipeline to raw text reveals that near-duplicate filtering flags significantly more
+O(N^2) to sub-quadratic complexity while operating with an acceptable memory usage. Applying this pipeline to raw text reveals that near-duplicate filtering flags significantly more
 redundant entries than rigid exact matching.
 Benchmarking a simple Python GPT-2 model on this pruned corpus cut training duration without degrading average loss, demonstrating how LSH speeds up execution.
 
