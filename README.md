@@ -1,4 +1,4 @@
-# Dataset-Deduplication
+# Dataset Deduplication
 
 Project for the course of Algorithms for Massive Data.  
 
